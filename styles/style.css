@@ -145,6 +145,7 @@
   .header__description {
     justify-self: end;
     width: calc(50% - 20px);
+    margin-inline-start: 0px;
     margin-inline-end: 20px;
   }
 
@@ -170,6 +171,7 @@
     justify-content: center;
     align-self: start;
     padding-block-start: 20px;
+    padding-inline-end: 0px;
   }
 
   .header__theme-menu-list {
@@ -185,20 +187,18 @@
   background-color: var(--background-color);
   padding-inline-start: 10px;
   padding-inline-end: 10px;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
 }
 
 .content__section {
   display: grid;
-}
-
-.content__section:first-child {
-  margin-block-start: 40px;
+  gap: 20px;
 }
 
 .content__section-main-title {
   color: var(--section-main-title-color);
   font-weight: 700;
-  margin-block-end: 20px;
 }
 
 .content__section-list {
@@ -247,8 +247,6 @@
 .content__section-block-images {
   display: grid;
   gap: 10px;
-  padding-block-start: 10px;
-  padding-block-end: 40px;
 }
 
 .content__section-block-images-item {
@@ -263,30 +261,24 @@
   .content {
     padding-inline-start: 20px;
     padding-inline-end: 20px;
+    padding-block-start: 60px;
+    padding-block-end: 60px;
     gap: 80px;
   }
 
   .content__section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .content__section:first-child {
-    margin-block-start: 60px;
+    grid-template-columns: 1fr 2fr;
   }
 
   .content__section:nth-child(4) {
     display: flex;
     flex-direction: column;
-  }
-
-  .content__section-main-title {
-    grid-row: 1;
-    padding-inline-end: 20px;
+    gap: 20px;
   }
 
   .content__section-list {
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
   }
 
   .special .content__section-main-title {
@@ -294,14 +286,13 @@
   }
 
   .special .content__section-list {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
   }
 
   .content__section-block-images {
     grid-template-columns: repeat(3, auto);
     gap: 20px;
-    padding-block-start: 20px;
-    padding-block-end: 60px;
+    padding-block-start: 10px;
   }
 
   .content__section-block-images-item:nth-child(1) {
