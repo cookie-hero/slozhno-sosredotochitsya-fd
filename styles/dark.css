@@ -13,3 +13,7 @@
   --button-main-color: #FF0070;
   --button-active-color: #FF0070;
 }
+
+.theme-dark .header__decorated-element {
+  visibility: visible;
+}

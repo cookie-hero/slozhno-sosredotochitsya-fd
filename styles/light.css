@@ -14,6 +14,10 @@
   --button-active-color: #353430;
 }
 
+.theme-light .header__decorated-element {
+  visibility: hidden;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #FF8DCB;
@@ -30,8 +34,8 @@
     --button-main-color: #353430;
     --button-active-color: #353430;
   }
-}
 
-.theme-light .header__decorated-element {
-  visibility: hidden;
+  .header__decorated-element {
+    visibility: hidden;
+  }
 }
